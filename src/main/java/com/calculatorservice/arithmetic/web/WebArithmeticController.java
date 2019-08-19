@@ -13,10 +13,13 @@ public class WebArithmeticController {
 
     @Autowired
     protected WebAdditionService additionService;
+
     @Autowired
     protected WebSubtractionService subtractionService;
+
     protected Logger logger = Logger.getLogger(WebArithmeticController.class
             .getName());
+
     public WebArithmeticController(WebAdditionService additionService, WebSubtractionService subtractionService) {
         this.additionService = additionService;
         this.subtractionService = subtractionService;

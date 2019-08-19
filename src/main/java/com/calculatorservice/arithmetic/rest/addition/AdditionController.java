@@ -19,5 +19,4 @@ public class AdditionController {
         int sum = augend1 + augend2;
         return "{\"addend1\":\"" + addend1 + "\", \"addend2\":\"" + addend2 + "\", \"sum\": \"" + sum + "\"}";
     }
-
 }

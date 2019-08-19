@@ -13,9 +13,12 @@ public class WebAdditionService {
     @Autowired
     @LoadBalanced
     protected RestTemplate restTemplate;
+
     protected String serviceUrl;
+
     protected Logger logger = Logger.getLogger(WebAdditionService.class
             .getName());
+
     public WebAdditionService(String serviceUrl) {
         this.serviceUrl = serviceUrl.startsWith("http") ? serviceUrl
                 : "http://" + serviceUrl;
